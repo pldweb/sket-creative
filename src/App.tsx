@@ -75,7 +75,7 @@ function App() {
               <span className="text-[#22FCC1] block">#SepaketWithSket</span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-400 mb-8 max-w-2xl">
-               Tingkatkan media sosial Anda untuk hasil yang lebih nampol
+               Tingkatkan media sosial Lo buat hasil yang lebih nampol
             </p>
             <div className="flex flex-col sm:flex-row gap-4 hidden">
               <button className="bg-[#22FCC1] text-black px-8 py-4 rounded-full flex items-center justify-center hover:bg-[#1ee5ac] transition-colors">
