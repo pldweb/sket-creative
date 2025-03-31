@@ -32,11 +32,11 @@ function App() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
-              <a href="#why-us" className="hover:text-[#22FCC1] transition-colors">Why Us</a>
-              <a href="#about" className="hover:text-[#22FCC1] transition-colors">About</a>
-              <a href="#services" className="hover:text-[#22FCC1] transition-colors">Services</a>
+              <a href="#about" className="hover:text-[#22FCC1] transition-colors">Beranda</a>
+              <a href="#about" className="hover:text-[#22FCC1] transition-colors">Tentang</a>
+              <a href="#services" className="hover:text-[#22FCC1] transition-colors">Layanan</a>
               <a href="#portfolio" className="hover:text-[#22FCC1] transition-colors">Portfolio</a>
-              <a href="#testimonials" className="hover:text-[#22FCC1] transition-colors">Testimonials</a>
+              <a href="#testimonials" className="hover:text-[#22FCC1] transition-colors">Testimonial</a>
             </div>
 
             {/* Mobile Menu */}
@@ -186,12 +186,12 @@ function App() {
           <div className="grid md:grid-cols-3 gap-8">
             <WorkCard 
               image="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80"
-              title="Innovative App"
-              category="Mobile Design"
+              title="Kelola Instagram Bisnismu"
+              category="Social Media Management"
             />
             <WorkCard 
               image="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80"
-              title="E-Commerce Platform"
+              title="Digitalisasi Website"
               category="Web Development"
             />
             <WorkCard 
@@ -199,6 +199,148 @@ function App() {
               title="Marketing Campaign"
               category="Digital Marketing"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="py-20 bg-[#111111]">
+        <div className="container mx-auto px-4">
+          <h3 className="text-4xl font-bold mb-4 text-center">Paket Layanan Kami</h3>
+          <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+            Sesuaikan kebutuhan bisnis Anda dengan paket yang beragam. Adapun untuk diluar komponen yang ada dapat konsultasi terlebih dahulu
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Basic Plan */}
+            <div className="bg-[#0A0A0A] rounded-2xl p-8 border border-gray-800 hover:border-[#22FCC1] transition-colors">
+              <div className="mb-8">
+                <h4 className="text-xl font-bold mb-4">Growth</h4>
+                <div className="flex items-end mb-4">
+                  <span className="text-4xl font-bold">Rp 1.499.000</span>
+                  <span className="text-gray-400 ml-2">/project</span>
+                </div>
+                <p className="text-gray-400">Cocok untuk yang baru memulai bisnis</p>
+              </div>
+              
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>5-page Website Design</span>
+                </li>
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>Mobile Responsive</span>
+                </li>
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>Basic SEO Setup</span>
+                </li>
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>Contact Form Integration</span>
+                </li>
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>2 Rounds of Revisions</span>
+                </li>
+              </ul>
+              
+              <button className="w-full py-4 px-8 rounded-full border-2 border-[#22FCC1] hover:bg-[#22FCC1] hover:text-black transition-colors">
+                Get Started
+              </button>
+            </div>
+
+            {/* Professional Plan */}
+            <div className="bg-[#0A0A0A] rounded-2xl p-8 border-2 border-[#22FCC1] relative transform hover:-translate-y-2 transition-transform">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span className="bg-[#22FCC1] text-black px-4 py-1 rounded-full text-sm font-bold">
+                  Most Popular
+                </span>
+              </div>
+              
+              <div className="mb-8">
+                <h4 className="text-xl font-bold mb-4">Scale Up</h4>
+                <div className="flex items-end mb-4">
+                  <span className="text-4xl font-bold">Rp 2.499.000</span>
+                  <span className="text-gray-400 ml-2">/project</span>
+                </div>
+                <p className="text-gray-400">Cocok untuk yang ingin bisnisnya viral lewat konten</p>
+              </div>
+              
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>10-page Website Design</span>
+                </li>
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>Advanced UI/UX Design</span>
+                </li>
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>Advanced SEO Optimization</span>
+                </li>
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>Social Media Integration</span>
+                </li>
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>E-commerce Features</span>
+                </li>
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>4 Rounds of Revisions</span>
+                </li>
+              </ul>
+              
+              <button className="w-full py-4 px-8 rounded-full bg-[#22FCC1] text-black hover:bg-[#1ee5ac] transition-colors">
+                Get Started
+              </button>
+            </div>
+
+            {/* Enterprise Plan */}
+            <div className="bg-[#0A0A0A] rounded-2xl p-8 border border-gray-800 hover:border-[#22FCC1] transition-colors">
+              <div className="mb-8">
+                <h4 className="text-xl font-bold mb-4">Prestige</h4>
+                <div className="flex items-end mb-4">
+                  <span className="text-4xl font-bold">Rp 2.999.000</span>
+                </div>
+                <p className="text-gray-400">Cocok untuk bisnis besar yang ingin membangun brand</p>
+              </div>
+              
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>Unlimited Pages</span>
+                </li>
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>Custom Web Applications</span>
+                </li>
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>Priority Support</span>
+                </li>
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>Advanced Analytics</span>
+                </li>
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>Custom Integrations</span>
+                </li>
+                <li className="flex items-center">
+                  <Check className="text-[#22FCC1] mr-2" size={20} />
+                  <span>Unlimited Revisions</span>
+                </li>
+              </ul>
+              
+              <button className="w-full py-4 px-8 rounded-full border-2 border-[#22FCC1] hover:bg-[#22FCC1] hover:text-black transition-colors">
+                Contact Us
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -252,147 +394,7 @@ function App() {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section id="pricing" className="py-20 bg-[#111111]">
-        <div className="container mx-auto px-4">
-          <h3 className="text-4xl font-bold mb-4 text-center">Our Pricing Plans</h3>
-          <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
-            Choose the perfect plan that suits your business needs. All plans include our core features with different levels of support and customization.
-          </p>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Basic Plan */}
-            <div className="bg-[#0A0A0A] rounded-2xl p-8 border border-gray-800 hover:border-[#22FCC1] transition-colors">
-              <div className="mb-8">
-                <h4 className="text-xl font-bold mb-4">Basic Plan</h4>
-                <div className="flex items-end mb-4">
-                  <span className="text-4xl font-bold">$499</span>
-                  <span className="text-gray-400 ml-2">/project</span>
-                </div>
-                <p className="text-gray-400">Perfect for small businesses starting their digital journey</p>
-              </div>
-              
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>5-page Website Design</span>
-                </li>
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>Mobile Responsive</span>
-                </li>
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>Basic SEO Setup</span>
-                </li>
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>Contact Form Integration</span>
-                </li>
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>2 Rounds of Revisions</span>
-                </li>
-              </ul>
-              
-              <button className="w-full py-4 px-8 rounded-full border-2 border-[#22FCC1] hover:bg-[#22FCC1] hover:text-black transition-colors">
-                Get Started
-              </button>
-            </div>
-
-            {/* Professional Plan */}
-            <div className="bg-[#0A0A0A] rounded-2xl p-8 border-2 border-[#22FCC1] relative transform hover:-translate-y-2 transition-transform">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <span className="bg-[#22FCC1] text-black px-4 py-1 rounded-full text-sm font-bold">
-                  Most Popular
-                </span>
-              </div>
-              
-              <div className="mb-8">
-                <h4 className="text-xl font-bold mb-4">Professional Plan</h4>
-                <div className="flex items-end mb-4">
-                  <span className="text-4xl font-bold">$999</span>
-                  <span className="text-gray-400 ml-2">/project</span>
-                </div>
-                <p className="text-gray-400">Ideal for growing businesses needing more features</p>
-              </div>
-              
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>10-page Website Design</span>
-                </li>
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>Advanced UI/UX Design</span>
-                </li>
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>Advanced SEO Optimization</span>
-                </li>
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>Social Media Integration</span>
-                </li>
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>E-commerce Features</span>
-                </li>
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>4 Rounds of Revisions</span>
-                </li>
-              </ul>
-              
-              <button className="w-full py-4 px-8 rounded-full bg-[#22FCC1] text-black hover:bg-[#1ee5ac] transition-colors">
-                Get Started
-              </button>
-            </div>
-
-            {/* Enterprise Plan */}
-            <div className="bg-[#0A0A0A] rounded-2xl p-8 border border-gray-800 hover:border-[#22FCC1] transition-colors">
-              <div className="mb-8">
-                <h4 className="text-xl font-bold mb-4">Enterprise Plan</h4>
-                <div className="flex items-end mb-4">
-                  <span className="text-4xl font-bold">Custom</span>
-                </div>
-                <p className="text-gray-400">For large businesses needing comprehensive solutions</p>
-              </div>
-              
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>Unlimited Pages</span>
-                </li>
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>Custom Web Applications</span>
-                </li>
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>Priority Support</span>
-                </li>
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>Advanced Analytics</span>
-                </li>
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>Custom Integrations</span>
-                </li>
-                <li className="flex items-center">
-                  <Check className="text-[#22FCC1] mr-2" size={20} />
-                  <span>Unlimited Revisions</span>
-                </li>
-              </ul>
-              
-              <button className="w-full py-4 px-8 rounded-full border-2 border-[#22FCC1] hover:bg-[#22FCC1] hover:text-black transition-colors">
-                Contact Us
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Footer */}
       <footer className="bg-[#111111] pt-20 pb-8">
@@ -425,16 +427,16 @@ function App() {
               <h4 className="text-lg font-bold mb-6">Quick Links</h4>
               <ul className="space-y-3">
                 <li>
-                  <a href="#about" className="text-gray-400 hover:text-[#22FCC1] transition-colors">About Us</a>
+                  <a href="#about" className="text-gray-400 hover:text-[#22FCC1] transition-colors">Tentang</a>
                 </li>
                 <li>
-                  <a href="#services" className="text-gray-400 hover:text-[#22FCC1] transition-colors">Our Services</a>
+                  <a href="#services" className="text-gray-400 hover:text-[#22FCC1] transition-colors">Layanan</a>
                 </li>
                 <li>
                   <a href="#portfolio" className="text-gray-400 hover:text-[#22FCC1] transition-colors">Portfolio</a>
                 </li>
                 <li>
-                  <a href="#testimonials" className="text-gray-400 hover:text-[#22FCC1] transition-colors">Testimonials</a>
+                  <a href="#testimonials" className="text-gray-400 hover:text-[#22FCC1] transition-colors">Testimonial</a>
                 </li>
                 <li>
                   <a href="#" className="text-gray-400 hover:text-[#22FCC1] transition-colors">Privacy Policy</a>
@@ -517,7 +519,7 @@ function App() {
   );
 }
 
-function WhyUsCard({ title, description }) {
+function WhyUsCard({ title, description }: {title: string, description: string}) {
   return (
     <div className="p-8 bg-[#111111] rounded-2xl hover:bg-[#151515] transition-colors border border-[#22FCC1]/10">
       <div className="text-[#22FCC1] mb-4">
@@ -529,7 +531,7 @@ function WhyUsCard({ title, description }) {
   );
 }
 
-function ServiceCard({ icon, title, description }) {
+function ServiceCard({ icon, title, description }: {icon: any, title: any, description: any}) {
   return (
     <div className="p-8 bg-[#111111] rounded-2xl hover:bg-[#151515] transition-colors">
       <div className="text-[#22FCC1] mb-4 w-12 h-12">
@@ -541,7 +543,7 @@ function ServiceCard({ icon, title, description }) {
   );
 }
 
-function WorkCard({ image, title, category }) {
+function WorkCard({ image, title, category }: {image: any, title: any, category: any}) {
   return (
     <div className="group relative overflow-hidden rounded-2xl">
       <img 
@@ -559,7 +561,7 @@ function WorkCard({ image, title, category }) {
   );
 }
 
-function TestimonialCard({ name, role, rating, text }) {
+function TestimonialCard({ name, role, rating, text }: {name: string, role: string, rating: number, text: string}) {
   return (
     <div className="p-8 bg-[#111111] rounded-2xl hover:bg-[#151515] transition-colors">
       <div className="flex mb-4">
