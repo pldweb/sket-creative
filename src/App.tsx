@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="bg-[#0A0A0A] text-white min-h-screen">
       {/* Navbar */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-[#0A0A0A] shadow-lg' : 'bg-transparent'}`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b-1 border-slate-300 ${isScrolled ? 'bg-[#0A0A0A] shadow-lg' : 'bg-transparent'}`}>
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-20">
             <img src={logo} alt="" className='max-h-10' />
@@ -128,9 +128,9 @@ function App() {
               />
             </div>
             <div>
-              <h3 className="text-4xl font-bold mb-6">About Us</h3>
+              <h3 className="text-4xl font-bold mb-6">Tentang Sket Creative</h3>
               <p className="text-gray-400 mb-6">
-                We are a team of passionate digital creators, developers, and strategists dedicated to transforming businesses through innovative digital solutions. With years of experience and a commitment to excellence, we help brands stand out in the digital landscape.
+                Kami adalah digital agency 
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex items-center">
