@@ -484,7 +484,7 @@ function App() {
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-4xl font-bold mb-8">Siap untuk menjadi pengusaha naik kelas?</h3>
             <p className="text-xl text-gray-400 mb-8">
-              Diskusikan sekarang biar bisnismu go digital
+              Diskusikan sekarang biar bisnismu Go Digital
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">
               <a href='https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Sket%20Creative%0A%0ABisakah%20kita%20agendakan%20diskusi?' className="bg-[#22FCC1] text-black px-8 py-4 rounded-full flex items-center justify-center hover:bg-[#1ee5ac] transition-colors">
