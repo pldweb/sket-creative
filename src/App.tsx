@@ -443,7 +443,7 @@ function App() {
               </ul>
               
               <a href='https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Sket%20Creative%0A%0ABisakah%20kita%20agendakan%20diskusi?' className="w-full py-4 px-8 rounded-full border-2 border-[#22FCC1] hover:bg-[#22FCC1] hover:text-black transition-colors">
-                Contact Us
+                Hubingi Kami
               </a>
             </div>
           </div>
