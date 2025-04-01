@@ -1,6 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { ArrowRight, Code2, Palette, Rocket, MessageSquare, ChevronDown, CheckCircle, Users, Star, Quote, Instagram, Facebook, Twitter, Linkedin, Mail, MapPin, Phone, Check, Menu, X } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { ArrowRight, Code2, Palette, Rocket, MessageSquare, ChevronDown, CheckCircle, Star, Quote, Instagram, Facebook, Twitter, Linkedin, Mail, MapPin, Phone, Check, Menu, X } from 'lucide-react';
 import logo from './assets/logo-sket.png'
+import patternSket from './assets/sket-pattern.svg'
+import heroSvg from './assets/hero.svg'
+
+
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,6 +17,19 @@ function App() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const stylePattern = {
+    backgroundImage: `url(${patternSket})`,
+        position: "absolute",
+        top: "0",
+        right: "0",
+        width: "100%",
+        height: "100vh",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        zIndex: 0,
+        opacity: 0.19,
+    } as React.CSSProperties;
 
   return (
     <div className="bg-[#0A0A0A] text-white min-h-screen">
@@ -54,23 +71,14 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <header className="relative min-h-screen flex items-center justify-center bg-[#0A0A0A]">
+      <section  className="relative min-h-screen flex items-center justify-center bg-[#0A0A0A]">
+        <div style={stylePattern}></div>
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/90 to-transparent z-10"></div>
-          <video 
-            className="w-full h-full object-cover"
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-          >
-            <source src="https://www.youtube.com/watch?v=-jokuknAtu8&pp=ygUOZGlnaXRhbCBhZ2VuY3k%3D" type="video/mp4" />
-          </video>
+          <div className="absolute inset-0 bg-gradient-to-l from-[#0A0A0A] via-[#0A0A0A]/90 to-transparent z-10"></div>
         </div>
-        
-        <div className="container mx-auto px-4 relative z-20">
-          <div className="max-w-3xl">
-            <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        <div className="container mx-auto px-4 relative z-20 flex justify-center items-center">
+          <div className="w-[50%]">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               Tingkatkan Media Sosial Bisnismu
               <span className="text-[#22FCC1] block">Bersama Sket Creative</span>
             </h2>
@@ -88,12 +96,15 @@ function App() {
               </button>
             </div>
           </div>
+          <div className="w-[50%]">
+            <img src={heroSvg} alt="" className='w-full'/>
+          </div>
         </div>
 
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
           <ChevronDown size={32} className="text-[#22FCC1]" />
         </div>
-      </header>
+      </section>
 
       {/* Why Choose Us Section */}
       <section id="why-us" className="py-20">
