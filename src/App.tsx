@@ -291,9 +291,9 @@ function App() {
                 </li>
               </ul>
               
-              <button className="w-full py-4 px-8 rounded-full border-2 border-[#22FCC1] hover:bg-[#22FCC1] hover:text-black transition-colors">
+              <a href='https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Sket%20Creative%0A%0ABisakah%20kita%20agendakan%20diskusi?' className="w-full py-4 px-8 rounded-full border-2 border-[#22FCC1] hover:bg-[#22FCC1] hover:text-black transition-colors">
                 Mulai Sekarang
-              </button>
+              </a>
             </div>
 
             {/* Professional Plan */}
@@ -379,9 +379,9 @@ function App() {
                 </li>
               </ul>
               
-              <button className="w-full py-4 px-8 rounded-full bg-[#22FCC1] text-black hover:bg-[#1ee5ac] transition-colors">
+              <a href='https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Sket%20Creative%0A%0ABisakah%20kita%20agendakan%20diskusi?' className="w-full py-4 px-8 rounded-full bg-[#22FCC1] text-black hover:bg-[#1ee5ac] transition-colors">
                 Mulai Sekarang
-              </button>
+              </a>
             </div>
 
             {/* Enterprise Plan */}
@@ -442,9 +442,9 @@ function App() {
                 </li>
               </ul>
               
-              <button className="w-full py-4 px-8 rounded-full border-2 border-[#22FCC1] hover:bg-[#22FCC1] hover:text-black transition-colors">
+              <a href='https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Sket%20Creative%0A%0ABisakah%20kita%20agendakan%20diskusi?' className="w-full py-4 px-8 rounded-full border-2 border-[#22FCC1] hover:bg-[#22FCC1] hover:text-black transition-colors">
                 Contact Us
-              </button>
+              </a>
             </div>
           </div>
         </div>
