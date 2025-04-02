@@ -236,7 +236,7 @@ function App() {
             <WorkCard 
               image={lpkasirku}
               title="Kasirku POS Platform"
-              category="Digital Marketing"
+              category="Landing Page Design"
               link="https://kasirku.vercel.app"
             />
           </div>
