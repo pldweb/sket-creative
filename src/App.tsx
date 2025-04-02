@@ -43,7 +43,10 @@ function App() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b-1 border-slate-300 ${isScrolled ? 'bg-[#0A0A0A] shadow-lg' : 'bg-transparent'}`}>
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-20">
+            <a href="#home">
             <img src={logo} alt="" className='max-h-10' />
+            </a>
+          
             
             {/* Mobile Menu Button */}
             <button 
@@ -54,18 +57,12 @@ function App() {
             </button>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-8">
-              <a href="#about" className="hover:text-[#22FCC1] transition-colors">Beranda</a>
-              <a href="#about" className="hover:text-[#22FCC1] transition-colors">Tentang</a>
-              <a href="#services" className="hover:text-[#22FCC1] transition-colors">Layanan</a>
-              <a href="#portfolio" className="hover:text-[#22FCC1] transition-colors">Portfolio</a>
-              <a href="#testimonials" className="hover:text-[#22FCC1] transition-colors">Testimonial</a>
-            </div>
+            <MenuNavbar />
 
             {/* Mobile Menu */}
             <div className={`md:hidden fixed inset-0 bg-[#0A0A0A] z-40 transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
               <div className="flex flex-col items-center justify-center h-full space-y-8">
-                <a href="#why-us" className="text-xl hover:text-[#22FCC1] transition-colors" onClick={() => setIsMenuOpen(false)}>Beranda</a>
+                <a href="#home" className="text-xl hover:text-[#22FCC1] transition-colors" onClick={() => setIsMenuOpen(false)}>Beranda</a>
                 <a href="#about" className="text-xl hover:text-[#22FCC1] transition-colors" onClick={() => setIsMenuOpen(false)}>Tentang</a>
                 <a href="#services" className="text-xl hover:text-[#22FCC1] transition-colors" onClick={() => setIsMenuOpen(false)}>Layanan</a>
                 <a href="#portfolio" className="text-xl hover:text-[#22FCC1] transition-colors" onClick={() => setIsMenuOpen(false)}>Portfolio</a>
@@ -77,7 +74,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section  className="relative min-h-screen flex items-center justify-center bg-[#0A0A0A]">
+      <section id='home'  className="relative min-h-screen flex items-center justify-center bg-[#0A0A0A]">
         <div style={stylePattern}></div>
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-l from-[#0A0A0A] via-[#0A0A0A]/90 to-transparent z-10"></div>
@@ -247,7 +244,8 @@ function App() {
             {/* Basic Plan */}
             <div className="bg-[#0A0A0A] h-max rounded-2xl p-8 border border-gray-800 hover:border-[#22FCC1] transition-colors">
               <div className="mb-8">
-                <h4 className="text-xl font-bold mb-4">Growth</h4>
+                <h4 className="text-xl font-bold mb-4">Sket Growth</h4>
+                <span className="text-[#22FCC1] ml-0 line-through italic text-xl">Rp 1.799.000</span>
                 <div className="flex items-end mb-4">
                   <span className="text-4xl font-bold">Rp 1.499.000</span>
                   <span className="text-gray-400 ml-2">/project</span>
@@ -304,9 +302,11 @@ function App() {
               </div>
 
               <div className="mb-8">
-                <h4 className="text-xl font-bold mb-4">Prestige</h4>
+                <h4 className="text-xl font-bold mb-4">Sket Prestige</h4>
+                <span className="text-[#22FCC1] ml-0 line-through italic text-xl">Rp 3.499.000</span>
                 <div className="flex items-end mb-4">
                   <span className="text-4xl font-bold">Rp 2.999.000</span>
+                  <span className="text-gray-400 ml-2">/project</span>
                 </div>
                 <p className="text-gray-400">Cocok untuk bisnis besar yang ingin membangun brand</p>
               </div>
@@ -386,7 +386,8 @@ function App() {
             {/* Enterprise Plan */}
             <div className="bg-[#0A0A0A] h-max rounded-2xl p-8 border border-gray-800 hover:border-[#22FCC1] transition-colors">
             <div className="mb-8">
-                <h4 className="text-xl font-bold mb-4">Scale Up</h4>
+                <h4 className="text-xl font-bold mb-4">Sket Scale Up</h4>
+                <span className="text-[#22FCC1] ml-0 line-through italic text-xl">Rp 2.999.000</span>
                 <div className="flex items-end mb-4">
                   <span className="text-4xl font-bold">Rp 2.499.000</span>
                   <span className="text-gray-400 ml-2">/project</span>
@@ -600,6 +601,25 @@ function App() {
           </div>
         </div>
       </footer>
+    </div>
+  );
+}
+
+function MenuNavbar() {
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <div className="hidden md:flex space-x-8">
+      <a onClick={() => scrollToSection("home")} className="cursor-pointer hover:text-[#22FCC1] transition-colors">Beranda</a>
+      <a onClick={() => scrollToSection("about")} className="cursor-pointer hover:text-[#22FCC1] transition-colors">Tentang</a>
+      <a onClick={() => scrollToSection("services")} className="cursor-pointer hover:text-[#22FCC1] transition-colors">Layanan</a>
+      <a onClick={() => scrollToSection("portfolio")} className="cursor-pointer hover:text-[#22FCC1] transition-colors">Portfolio</a>
+      <a onClick={() => scrollToSection("testimonials")} className="cursor-pointer hover:text-[#22FCC1] transition-colors">Testimonial</a>
     </div>
   );
 }
