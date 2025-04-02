@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from 'react';
-import { ArrowRight, Code2, Palette, Rocket, MessageSquare, ChevronDown, CheckCircle, Star, Quote, Instagram, Facebook, Twitter, Linkedin, Mail, MapPin, Phone, Check, Menu, X } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { ArrowRight, Code2, Palette, Rocket, MessageSquare, ChevronDown, CheckCircle, Star, Quote, Instagram, Facebook, Linkedin, Mail, MapPin, Phone, Check, Menu, X } from 'lucide-react';
 import logo from './assets/logo-sket.png'
 import patternSket from './assets/sket-pattern.svg'
 import heroSvg from './assets/hero.svg'
@@ -180,18 +180,17 @@ function App() {
             <ServiceCard 
               icon={<Palette />}
               title="Jasa Kelola Sosmed IG"
-              description="Memberikan strategi konten untuk meningkatkan konversi penjualan Anda melalui media sosial bisnis Anda
-"
+              description="Kami siap bikin bisnis Anda makin naik level di media sosial. Nggak cuma asal posting, tapi pakai strategi yang bikin interaksi naik"
             />
             <ServiceCard 
               icon={<Code2 />}
-              title="Jasa Pembuatan Website Profesional"
-              description="Memberikan layanan pembuatan website untuk menampilkan bisnis Anda agar lebih profesional"
+              title="Jasa Pembuatan Website"
+              description="Kami buatkan website profesional, menarik, fungsional, dan mudah diakses yang siap digunakan naikin kepercayaan pelanggan"
             />
             <ServiceCard 
               icon={<Rocket />}
               title="Jasa Digital Marketing"
-              description="Memberikan layanan digital marketing untuk membantu bisnis Anda menjangkau lebih banyak calon customer"
+              description="Kami membantu bisnis jangkau lebih banyak pelanggan lewat strategi digital marketing yang tepat, lebih terlihat, dan lebih cuan!"
             />
           </div>
         </div>
@@ -443,7 +442,7 @@ function App() {
               </ul>
               
               <a href='https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Sket%20Creative%0A%0ABisakah%20kita%20agendakan%20diskusi?' className="w-full py-4 px-8 rounded-full border-2 border-[#22FCC1] hover:bg-[#22FCC1] hover:text-black transition-colors">
-                Hubungi Kami
+              Mulai Sekarang
               </a>
             </div>
           </div>
@@ -514,7 +513,7 @@ function App() {
                 #sepaketwithsket
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-[#22FCC1] hover:text-white transition-colors">
+                <a href="https://instagram.com/sket.creative" className="text-[#22FCC1] hover:text-white transition-colors">
                   <Instagram size={24} />
                 </a>
                 <a href="#" className="text-[#22FCC1] hover:text-white transition-colors">
