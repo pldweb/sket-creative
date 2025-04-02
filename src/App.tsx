@@ -10,7 +10,7 @@ import junge_leiter_community from './assets/project/Junge_Leiter_Community.png'
 import lpmc from './assets/project/lp-mc.png'
 import spak from './assets/project/sp-ak.png'
 import lpsehatbahagia from './assets/project/lp-sehatbahagia.png'
-
+import lpkasirku from './assets/project/lp-kasirku.png'
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -217,7 +217,7 @@ function App() {
             />
             <WorkCard 
               image={lpmc}
-              title="MyCommerce Landing Page"
+              title="MyCommerce Ecommerce Platform"
               category="Landing Page Design"
               link="https://pldweb.github.io/mc-landing"
             />
@@ -229,15 +229,15 @@ function App() {
             />
             <WorkCard 
               image={lpsehatbahagia}
-              title="Sehat Bahagia"
+              title="Sehat Bahagia Community"
               category="Landing Page Design"
               link="https://sehatbahagia.id"
             />
             <WorkCard 
-              image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
-              title="Marketing Campaign"
+              image={lpkasirku}
+              title="Kasirku POS Platform"
               category="Digital Marketing"
-              link=""
+              link="https://kasirku.vercel.app"
             />
           </div>
         </div>
