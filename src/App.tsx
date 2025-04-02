@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ArrowRight, Code2, Palette, Rocket, MessageSquare, ChevronDown, CheckCircle, Star, Quote, Instagram, Facebook, Linkedin, Mail, MapPin, Phone, Check, Menu, X, ExternalLink } from 'lucide-react';
+import { ArrowRight, Code2, Palette, Rocket, MessageSquare, ChevronDown, CheckCircle, Star, Quote, Instagram, Facebook, Mail, MapPin, Phone, Check, Menu, X, ExternalLink } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -7,7 +7,7 @@ import logo from './assets/logo-sket.png'
 import patternSket from './assets/sket-pattern.svg'
 import heroSvg from './assets/hero.svg'
 import aboutSvg from './assets/about.svg'
-import bgPattern from './assets/bg-pattern.svg'
+// import bgPattern from './assets/bg-pattern.svg'
 import ftii_uhamka from './assets/project/FTII_Uhamka.png'
 import junge_leiter_community from './assets/project/Junge_Leiter_Community.png'
 import lpmc from './assets/project/lp-mc.png'
@@ -45,9 +45,9 @@ function App() {
         opacity: 0.19,
     } as React.CSSProperties;
 
-    const bgSket = {
-      backgroundImage: `url(${bgPattern})`,
-    }
+    // const bgSket = {
+    //   backgroundImage: `url(${bgPattern})`,
+    // }
 
   return (
     <div className="bg-[#0A0A0A] text-white min-h-screen">
@@ -687,22 +687,22 @@ function WorkCard({ image, title, category, link }: {image: any, title: any, cat
   );
 }
 
-function TestimonialCard({ name, role, rating, text }: {name: string, role: string, rating: number, text: string}) {
-  return (
-    <div className="p-8 bg-[#111111] rounded-2xl hover:bg-[#151515] transition-colors">
-      <div className="flex mb-4">
-        {[...Array(rating)].map((_, i) => (
-          <Star key={i} size={20} className="text-[#22FCC1] fill-[#22FCC1]" />
-        ))}
-      </div>
-      <Quote className="text-[#22FCC1] mb-4" size={32} />
-      <p className="text-gray-400 mb-6">{text}</p>
-      <div>
-        <h4 className="font-bold">{name}</h4>
-        <p className="text-[#22FCC1] text-sm">{role}</p>
-      </div>
-    </div>
-  );
-}
+// function TestimonialCard({ name, role, rating, text }: {name: string, role: string, rating: number, text: string}) {
+//   return (
+//     <div className="p-8 bg-[#111111] rounded-2xl hover:bg-[#151515] transition-colors">
+//       <div className="flex mb-4">
+//         {[...Array(rating)].map((_, i) => (
+//           <Star key={i} size={20} className="text-[#22FCC1] fill-[#22FCC1]" />
+//         ))}
+//       </div>
+//       <Quote className="text-[#22FCC1] mb-4" size={32} />
+//       <p className="text-gray-400 mb-6">{text}</p>
+//       <div>
+//         <h4 className="font-bold">{name}</h4>
+//         <p className="text-[#22FCC1] text-sm">{role}</p>
+//       </div>
+//     </div>
+//   );
+// }
 
 export default App;
