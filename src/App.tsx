@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
 import { ArrowRight, Code2, Palette, Rocket, MessageSquare, ChevronDown, CheckCircle, Star, Quote, Instagram, Facebook, Linkedin, Mail, MapPin, Phone, Check, Menu, X, ExternalLink } from 'lucide-react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import logo from './assets/logo-sket.png'
 import patternSket from './assets/sket-pattern.svg'
 import heroSvg from './assets/hero.svg'
@@ -15,6 +18,10 @@ import lpkasirku from './assets/project/lp-kasirku.png'
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -85,7 +92,7 @@ function App() {
           <div className="absolute inset-0 bg-gradient-to-l from-[#0A0A0A] via-[#0A0A0A]/90 to-transparent z-10"></div>
         </div>
         <div className="container mx-auto px-4 relative z-20 flex flex-col lg:flex-row justify-center items-center">
-          <div className="w-full lg:w-[50%]">
+          <div className="w-full lg:w-[50%]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
             <h2 className="text-4xl md:text-[59px] font-bold mb-6 leading-tight md:leading-[65px]">
               Tingkatin Branding Bisnismu
               <span className="text-[#22FCC1] block">Bersama Sket Creative</span>
@@ -104,7 +111,7 @@ function App() {
               </a> */}
             </div>
           </div>
-          <div className="hidden lg:w-[50%] lg:block">
+          <div className="hidden lg:w-[50%] lg:block" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
             <img src={heroSvg} alt="" className='w-full'/>
           </div>
         </div>
@@ -117,8 +124,8 @@ function App() {
       {/* Why Choose Us Section */}
       <section id="why-us" className="py-20">
         <div className="container mx-auto px-4">
-          <h3 className="text-4xl font-bold mb-16 text-center">Kenapa Harus <span className='text-[#22FCC1]'>Sket Creative</span></h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h3 className="text-4xl font-bold mb-16 text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">Kenapa Harus <span className='text-[#22FCC1]'>Sket Creative</span></h3>
+          <div className="grid md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
             <WhyUsCard 
               title="Harga Terbaik"
               description="Kami menawarkan harga yang terbaik agar mudah dijangkau seluruh UMKM"
@@ -139,14 +146,14 @@ function App() {
       <section id="about" className="py-20 bg-[#111111]">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+            <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">
               <img 
                 src={aboutSvg}
                 alt="Our Team"
                 className="rounded-2xl"
               />
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="1000">
               <h3 className="text-4xl font-bold mb-6">Tentang <span className='text-[#22FCC1]'>Sket Creative</span></h3>
               <p className="text-gray-400 mb-6">
               Kami hadir dengan visi membantu UMKM di seluruh Indonesia meraih kesuksesan di dunia digital. Lewat layanan kami, UMKM bisa Go Digital dengan lebih mudah, tak hanya melalui konten kreatif di media sosial, tetapi juga dengan website yang menarik, profesional, dan mampu meningkatkan interaksi serta konversi pelanggan
@@ -177,8 +184,8 @@ function App() {
       {/* Services Section */}
       <section id="services" className="py-20">
         <div className="container mx-auto px-4">
-          <h3 className="text-4xl font-bold mb-16 text-center">Layanan Yang Kami <span className='text-[#22FCC1]'>Sediakan</span></h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h3 className="text-4xl font-bold mb-16 text-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">Layanan Yang Kami <span className='text-[#22FCC1]'>Sediakan</span></h3>
+          <div className="grid md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-duration="600" data-aos-delay="1000">
             <ServiceCard 
               icon={<Palette />}
               title="Jasa Kelola Sosmed IG"
@@ -201,8 +208,8 @@ function App() {
       {/* Portfolio Section */}
       <section id="portfolio" className="py-20 bg-[#111111]">
         <div className="container mx-auto px-4">
-          <h3 className="text-4xl font-bold mb-16 text-center">Portfolio <span className='text-[#22FCC1]'>Sket Creative</span></h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h3 className="text-4xl font-bold mb-16 text-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">Portfolio <span className='text-[#22FCC1]'>Sket Creative</span></h3>
+          <div className="grid md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-duration="600" data-aos-delay="1000">
             <WorkCard 
               image={ftii_uhamka}
               title="FTII Universitas Muhammadiyah Prof Dr Hamka"
@@ -246,12 +253,12 @@ function App() {
       {/* Pricing Section */}
       <section id="pricing" className="py-20 bg-[#111111]">
         <div className="container mx-auto px-4">
-          <h3 className="text-4xl font-bold mb-4 text-center">Paket <span className='text-[#22FCC1]'>Layanan Kami</span></h3>
-          <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+          <h3 className="text-4xl font-bold mb-4 text-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">Paket <span className='text-[#22FCC1]'>Layanan Kami</span></h3>
+          <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto" data-aos="fade-up" data-aos-duration="600" data-aos-delay="900">
             Sesuaikan kebutuhan bisnis Anda dengan paket yang beragam. Adapun untuk diluar komponen yang ada dapat konsultasi terlebih dahulu
           </p>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-duration="600" data-aos-delay="1000">
             {/* Basic Plan */}
             <div className="bg-[#0A0A0A] h-max rounded-2xl p-8 border border-gray-800 hover:border-[#22FCC1] transition-colors">
               <div className="mb-8">
@@ -493,11 +500,11 @@ function App() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-4xl font-bold mb-8">Siap Untuk Menjadi <span className='text-[#22FCC1]'>Pengusaha Naik Kelas?</span></h3>
-            <p className="text-xl text-gray-400 mb-8">
+            <h3 className="text-4xl font-bold mb-8" data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">Siap Untuk Menjadi <span className='text-[#22FCC1]'>Pengusaha Naik Kelas?</span></h3>
+            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-duration="600" data-aos-delay="900">
               Diskusikan sekarang biar bisnismu Go Digital
             </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center">
+            <div className="flex flex-col md:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="1000">
               <a href='https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Sket%20Creative%0A%0ABisakah%20kita%20agendakan%20diskusi?' className="bg-[#22FCC1] text-black px-8 py-4 rounded-full flex items-center justify-center hover:bg-[#1ee5ac] transition-colors">
                 Jadwalkan Konsultasi
                 <MessageSquare className="ml-2" />
