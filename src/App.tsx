@@ -7,6 +7,8 @@ import aboutSvg from './assets/about.svg'
 import bgPattern from './assets/bg-pattern.svg'
 import ftii_uhamka from './assets/project/FTII_Uhamka.png'
 import junge_leiter_community from './assets/project/Junge_Leiter_Community.png'
+import lpmc from './assets/project/lp-mc.png'
+
 
 
 function App() {
@@ -213,10 +215,10 @@ function App() {
               link="https://www.instagram.com/jungeleiter/"
             />
             <WorkCard 
-              image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
-              title="Marketing Campaign"
-              category="Digital Marketing"
-              link=""
+              image={lpmc}
+              title="MyCommerce Landing Page"
+              category="Landing Page Design"
+              link="https://pldweb.github.io/mc-landing"
             />
             <WorkCard 
               image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
