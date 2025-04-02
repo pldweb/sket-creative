@@ -14,6 +14,7 @@ import lpmc from './assets/project/lp-mc.png'
 import spak from './assets/project/sp-ak.png'
 import lpsehatbahagia from './assets/project/lp-sehatbahagia.png'
 import lpkasirku from './assets/project/lp-kasirku.png'
+import lpimsisfo from './assets/project/lp-imsisfo.png'
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -241,11 +242,18 @@ function App() {
               link="https://sehatbahagia.id"
             />
             <WorkCard 
+              image={lpimsisfo}
+              title="Organization Profile IMSISFO"
+              category="Website Design"
+              link="https://monkskyz.github.io/imsisfo.web/"
+            />
+            <WorkCard 
               image={lpkasirku}
               title="Kasirku POS Platform"
               category="Landing Page Design"
               link="https://kasirku.vercel.app"
             />
+
           </div>
         </div>
       </section>
