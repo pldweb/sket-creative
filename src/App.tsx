@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
-import { ArrowRight, Code2, Palette, Rocket, MessageSquare, ChevronDown, CheckCircle, Star, Quote, Instagram, Facebook, Linkedin, Mail, MapPin, Phone, Check, Menu, X } from 'lucide-react';
+import { ArrowRight, Code2, Palette, Rocket, MessageSquare, ChevronDown, CheckCircle, Star, Quote, Instagram, Facebook, Linkedin, Mail, MapPin, Phone, Check, Menu, X, ExternalLink } from 'lucide-react';
 import logo from './assets/logo-sket.png'
 import patternSket from './assets/sket-pattern.svg'
 import heroSvg from './assets/hero.svg'
 import aboutSvg from './assets/about.svg'
 import bgPattern from './assets/bg-pattern.svg'
+import ftii_uhamka from './assets/project/FTII_Uhamka.png'
+import junge_leiter_community from './assets/project/Junge_Leiter_Community.png'
 
 
 function App() {
@@ -81,7 +83,7 @@ function App() {
         </div>
         <div className="container mx-auto px-4 relative z-20 flex flex-col lg:flex-row justify-center items-center">
           <div className="w-full lg:w-[50%]">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <h2 className="text-4xl md:text-[59px] font-bold mb-6 leading-tight md:leading-[65px]">
               Tingkatin Branding Bisnismu
               <span className="text-[#22FCC1] block">Bersama Sket Creative</span>
             </h2>
@@ -199,34 +201,40 @@ function App() {
           <h3 className="text-4xl font-bold mb-16 text-center">Portfolio <span className='text-[#22FCC1]'>Sket Creative</span></h3>
           <div className="grid md:grid-cols-3 gap-8">
             <WorkCard 
-              image="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80"
-              title="Kelola Instagram Bisnismu"
+              image={ftii_uhamka}
+              title="FTII Universitas Muhammadiyah Prof Dr Hamka"
               category="Social Media Management"
+              link="https://www.instagram.com/ftiiuhamka/"
             />
             <WorkCard 
-              image="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80"
-              title="Digitalisasi Website"
-              category="Web Development"
-            />
-            <WorkCard 
-              image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
-              title="Marketing Campaign"
-              category="Digital Marketing"
+              image={junge_leiter_community}
+              title="Junge Leiter Community"
+              category="Social Media Management"
+              link="https://www.instagram.com/jungeleiter/"
             />
             <WorkCard 
               image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
               title="Marketing Campaign"
               category="Digital Marketing"
+              link=""
             />
             <WorkCard 
               image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
               title="Marketing Campaign"
               category="Digital Marketing"
+              link=""
             />
             <WorkCard 
               image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
               title="Marketing Campaign"
               category="Digital Marketing"
+              link=""
+            />
+            <WorkCard 
+              image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+              title="Marketing Campaign"
+              category="Digital Marketing"
+              link=""
             />
           </div>
         </div>
@@ -235,7 +243,7 @@ function App() {
       {/* Pricing Section */}
       <section id="pricing" className="py-20 bg-[#111111]">
         <div className="container mx-auto px-4">
-          <h3 className="text-4xl font-bold mb-4 text-center">Paket Layanan Kami</h3>
+          <h3 className="text-4xl font-bold mb-4 text-center">Paket <span className='text-[#22FCC1]'>Layanan Kami</span></h3>
           <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
             Sesuaikan kebutuhan bisnis Anda dengan paket yang beragam. Adapun untuk diluar komponen yang ada dapat konsultasi terlebih dahulu
           </p>
@@ -482,7 +490,7 @@ function App() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-4xl font-bold mb-8">Siap untuk menjadi pengusaha naik kelas?</h3>
+            <h3 className="text-4xl font-bold mb-8">Siap Untuk Menjadi <span className='text-[#22FCC1]'>Pengusaha Naik Kelas?</span></h3>
             <p className="text-xl text-gray-400 mb-8">
               Diskusikan sekarang biar bisnismu Go Digital
             </p>
@@ -648,7 +656,7 @@ function ServiceCard({ icon, title, description }: {icon: any, title: any, descr
   );
 }
 
-function WorkCard({ image, title, category }: {image: any, title: any, category: any}) {
+function WorkCard({ image, title, category, link }: {image: any, title: any, category: any, link: any}) {
   return (
     <div className="group relative overflow-hidden rounded-2xl">
       <img 
@@ -658,8 +666,11 @@ function WorkCard({ image, title, category }: {image: any, title: any, category:
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
         <div>
-          <h4 className="text-2xl font-bold mb-2">{title}</h4>
-          <p className="text-[#22FCC1]">{category}</p>
+          <h4 className="text-2xl font-bold mb-1">{title}</h4>
+          <div className='flex flex-row justify-start items-center gap-1'>
+            <p className="text-[#22FCC1] font-medium">{category} | </p>
+            <a href={link} target='_blank' className='font-medium text-[#22FCC1]'> Lihat Project <ExternalLink className="w-4 h-4 inline relative bottom-[2px]" /></a>
+          </div>
         </div>
       </div>
     </div>
