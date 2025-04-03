@@ -15,6 +15,7 @@ import spak from './assets/project/sp-ak.png'
 import lpsehatbahagia from './assets/project/lp-sehatbahagia.png'
 import lpkasirku from './assets/project/lp-kasirku.png'
 import lpimsisfo from './assets/project/lp-imsisfo.png'
+import Artikel from './pages/Artikel';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -524,9 +525,9 @@ function App() {
             </div>
           </div>
         </div>
-      </section>
+      </section>  
 
-      
+      <Artikel />
 
       {/* Footer */}
       <footer className="bg-[#111111] pt-20 pb-8">
