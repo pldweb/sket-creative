@@ -8,6 +8,8 @@ import patternSket from './assets/sket-pattern.svg'
 import heroSvg from './assets/hero.svg'
 import aboutSvg from './assets/about.svg'
 // import bgPattern from './assets/bg-pattern.svg'
+
+// Asset Project
 import ftii_uhamka from './assets/project/FTII_Uhamka.png'
 import junge_leiter_community from './assets/project/Junge_Leiter_Community.png'
 import lpmc from './assets/project/lp-mc.png'
@@ -15,6 +17,13 @@ import spak from './assets/project/sp-ak.png'
 import lpsehatbahagia from './assets/project/lp-sehatbahagia.png'
 import lpkasirku from './assets/project/lp-kasirku.png'
 import lpimsisfo from './assets/project/lp-imsisfo.png'
+import smm_dema_ftik from './assets/project/smm-dema-ftik.png'
+import smm_edukasi_keuangan_syariah from './assets/project/smm-edukasi-keuangan-syariah.png'
+import smm_fakultas_ilmu_tarbiyah from './assets/project/smm-fakultas-ilmu-tarbiyah.png'
+import smm_pmii_komfaktar from './assets/project/smm-pmii-komfaktar.png'
+import smm_rmi_pbnu from './assets/project/smm-rmi-pbnu.png'
+
+
 import Artikel from './pages/Artikel';
 
 function App() {
@@ -212,6 +221,33 @@ function App() {
         <div className="container mx-auto px-4">
           <h3 className="text-4xl font-bold mb-16 text-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">Portfolio <span className='text-[#22FCC1]'>Sket Creative</span></h3>
           <div className="grid md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-duration="600" data-aos-delay="1000">
+            <WorkCard 
+              image={smm_edukasi_keuangan_syariah} 
+              title="Bisa Bijak | Edukasi Keuangan Syariah" 
+              category="Social Media Management" 
+              link="https://www.instagram.com/bisabijak.id/"
+              />
+            <WorkCard 
+              image={smm_dema_ftik} 
+              title="DEMA FITK | Organisasi Mahasiswa" 
+              category="Social Media Management" 
+              link="https://www.instagram.com/demafitk_official/"/>
+            <WorkCard 
+              image={smm_fakultas_ilmu_tarbiyah} 
+              title="Fakultas Ilmu Tarbiyah dan Keguruan UIN Jakarta | Informasi Fakultas"
+              category="Social Media Management" 
+              link="https://www.instagram.com/fitkuinjkt/"/>
+            <WorkCard 
+              image={smm_pmii_komfaktar} 
+              title="PMII Komfaktar | Organisasi Mahasiswa"
+              category="Social Media Management" 
+              link="https://www.instagram.com/pmiikomfaktarofficial"
+              />
+            <WorkCard 
+              image={smm_rmi_pbnu} 
+              title="RMI PBNU | Beasiswa NU" 
+              category="Social Media Management" 
+              link=""/>
             <WorkCard 
               image={ftii_uhamka}
               title="FTII Universitas Muhammadiyah Prof Dr Hamka"
