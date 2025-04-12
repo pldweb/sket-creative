@@ -6,7 +6,7 @@
       },
       {
         "source": "/:path*",
-        "destination": "https://sistem.sketcreative.com/:path*"  
+        "destination": "https://admin.travelsystem.my.id/:path*"  
       }
     ]
   }
