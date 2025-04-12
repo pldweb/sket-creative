@@ -6,7 +6,7 @@
     },
     {
         "source": "/:path*",
-        "destination": "https://admin.travelsystem10.my.id/:path*"  
+        "destination": "https://inkflix.vercel.app/:path*"  
     }
     ]
 }
