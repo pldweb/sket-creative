@@ -1,12 +1,12 @@
 {
     "rewrites": [
-      {
+    {
         "source": "/",
         "destination": "/"   
-      },
-      {
+    },
+    {
         "source": "/:path*",
-        "destination": "https://admin.travelsystem.my.id/:path*"  
-      }
+        "destination": "https://admin.travelsystem10.my.id/:path*"  
+    }
     ]
-  }
+}
