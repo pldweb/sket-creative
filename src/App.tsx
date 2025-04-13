@@ -639,10 +639,6 @@ function App() {
                   </span>
                 </li>
                 <li className="flex items-center space-x-3">
-                  <Phone className="text-[#22FCC1] flex-shrink-0" size={20} />
-                  <span className="text-gray-400">+62 8953-6544-1554</span>
-                </li>
-                <li className="flex items-center space-x-3">
                   <Mail className="text-[#22FCC1] flex-shrink-0" size={20} />
                   <span className="text-gray-400">support@sketcreative.com</span>
                 </li>
