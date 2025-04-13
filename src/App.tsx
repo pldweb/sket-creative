@@ -25,6 +25,7 @@ import smm_rmi_pbnu from './assets/project/smm-rmi-pbnu.png'
 
 
 import Artikel from './pages/Artikel';
+import FloatingWhatsapp from './pages/FloatingWhatsapp';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -664,6 +665,7 @@ function App() {
           </div>
         </div>
       </footer>
+      <FloatingWhatsapp />
     </div>
   );
 }
