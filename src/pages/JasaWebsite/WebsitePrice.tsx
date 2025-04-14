@@ -39,19 +39,19 @@ const WebsitePrice = () => {
           name: "Sket Basic",
           features: [true, true, false, false, false, false, false, false, true, true, true, true, "2 - 4 Hari", "+250rb"],
           price: "Rp799rb",
-          url: "https://wa.me/6281212375467?text=Halo%2C%20saya%20ingin%20aktivasi%20sistem%20AK%20Starter.%20Bagaimana%20caranya%3F",
+          url: "https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Sket%20Web%20Basic%0A%0ABisakah%20kita%20agendakan%20diskusi?",
         },
         {
           name: "Sket Medium",
           features: [true, true, true, true, false, true, false, false, true, true, true, true, "2 - 6 Hari", "+250rb"],
           price: "Rp989rb",
-          url: "https://wa.me/6281212375467?text=Halo%2C%20saya%20ingin%20aktivasi%20sistem%20AK%20Medium.%20Bagaimana%20caranya%3F",
+          url: "https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Sket%20Web%20Medium%0A%0ABisakah%20kita%20agendakan%20diskusi?",
         },
         {
           name: "Sket Hard",
           features: [true, true, true, true, true, true, true, true, true, true, true, true, "2 - 8 Hari", "+250rb"],
           price: "Rp1.2jt",
-          url: "https://wa.me/6281212375467?text=Halo%2C%20saya%20ingin%20aktivasi%20sistem%20AK%20Advanced.%20Bagaimana%20caranya%3F",
+          url: "https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Sket%20Web%20Hard%0A%0ABisakah%20kita%20agendakan%20diskusi?",
           recommend: true,
         },
       ];
