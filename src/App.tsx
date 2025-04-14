@@ -26,6 +26,8 @@ import smm_rmi_pbnu from './assets/project/smm-rmi-pbnu.png'
 
 import Artikel from './pages/Artikel';
 import FloatingWhatsapp from './pages/FloatingWhatsapp';
+import WebsitePrice from './pages/WebsitePriceContainer';
+import LogoPrice from './pages/LogoPriceContainer';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -511,6 +513,9 @@ function App() {
               </a>
             </div>
           </div>
+
+          <WebsitePrice />
+          <LogoPrice data-aos="fade-up" data-aos-duration="700" data-aos-delay="700" />
         </div>
       </section>
 
