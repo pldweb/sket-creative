@@ -100,7 +100,7 @@ const WebsitePrice = () => {
                                 <div className="swiper-slide pt-option-item lg:flex-1 flex-none lg:w-auto max-w-[100%] w-full lg:max-w-[33.333%] mr-0 " key={i}>
                                     <div className={`pt-item relative flex flex-column justify-start mb-0 overflow-hidden rounded-[24px] ${pkg.recommend ? "recommend" : ""}`}>
                                     <div className="pt-item-wrap flex-1 align-middle items-center flex flex-col justify-center text-center lg:px-[24px] lg:py-[24px] px-[8px] py-[24px] ">
-                                        <div className="pt-row text-black bg-[#22FCC1] w-[80%] mx-auto my-0 rounded-lg flex flex-col justify-center min-h-[62.8px] px-[16px] md:text-[20px] text-[16px] border-b-2 border-[#49484a1a] font-semibold">{pkg.name}</div>
+                                        <div className="pt-row text-black bg-[#22FCC1] w-[80%] mx-auto my-0 rounded-lg flex flex-col justify-center min-h-[62.8px] px-[16px] md:text-[19px] text-[16px] border-b-2 border-[#49484a1a] font-semibold">{pkg.name}</div>
                                         {pkg.features.map((item, j) => (
                                             <div
                                                 className="pt-row flex flex-col justify-center min-h-[72.8px] px-[16px] text-[20px] border-b-2 border-[#e2e2e217] font-semibold"

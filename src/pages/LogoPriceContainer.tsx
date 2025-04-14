@@ -12,7 +12,7 @@ const LogoPrice = () => {
         <>
             <section id="website-price" className="pt-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
                 <div className="bg-[#2b2b2b] max-w-[100%] lg:max-w-[85%] block mx-auto h-max rounded-2xl p-8 border border-gray-800 hover:border-[#22FCC1] transition-colors">
-                    <div className="flex justify-between items-center">
+                    <div className="flex-col lg:flex-row flex gap-5 justify-between items-center">
                         <div className="row-price">
                             <div className="col-price">
                                 <h1 className="text-4xl font-bold text-white mb-4">Butuh <span className='text-[#22FCC1]'>Logo</span> yang Profesional?</h1>
