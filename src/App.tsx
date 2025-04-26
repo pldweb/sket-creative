@@ -22,7 +22,7 @@ import smm_edukasi_keuangan_syariah from './assets/project/smm-edukasi-keuangan-
 import smm_fakultas_ilmu_tarbiyah from './assets/project/smm-fakultas-ilmu-tarbiyah.png'
 import smm_pmii_komfaktar from './assets/project/smm-pmii-komfaktar.png'
 import smm_rmi_pbnu from './assets/project/smm-rmi-pbnu.png'
-import arsicon_brand from '/assets/project/arsicon-brand.png'
+import arsicon_brand from './assets/project/arsicon-brand.png'
 
 
 import Artikel from './pages/Artikel';
