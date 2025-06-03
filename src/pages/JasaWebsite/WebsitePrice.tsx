@@ -37,20 +37,20 @@ const WebsitePrice = () => {
     const packages = [
         {
           name: "Sket Growth",
-          features: [true, true, false, false, false, false, false, false, true, true, true, true, "2 - 4 Hari", "+250rb"],
-          price: "Rp799rb",
+          features: [true, true, false, false, false, false, false, false, true, true, true, true, "3 - 7 Hari", "+250rb"],
+          price: "Rp2.5Jt",
           url: "https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Sket%20Web%20Growth%0A%0ABisakah%20kita%20agendakan%20diskusi?",
         },
         {
           name: "Sket Prestige",
-          features: [true, true, true, true, false, true, false, false, true, true, true, true, "2 - 6 Hari", "+250rb"],
-          price: "Rp989rb",
+          features: [true, true, true, true, true, true, true, false, true, true, true, true, "5 - 14 Hari", "+250rb"],
+          price: "Rp3.8Jt",
           url: "https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Sket%20Web%20Prestige%0A%0ABisakah%20kita%20agendakan%20diskusi?",
         },
         {
           name: "Sket Scale Up",
-          features: [true, true, true, true, true, true, true, true, true, true, true, true, "2 - 8 Hari", "+250rb"],
-          price: "Rp1.2jt",
+          features: [true, true, true, true, true, true, true, true, true, true, true, true, "7 - 21 Hari", "+250rb"],
+          price: "Rp4.5Jt",
           url: "https://wa.me/62895365441554?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Sket%20Web%20Scale%20Up%0A%0ABisakah%20kita%20agendakan%20diskusi?",
           recommend: true,
         },
