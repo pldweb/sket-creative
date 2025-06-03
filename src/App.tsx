@@ -522,7 +522,7 @@ function App() {
           </div>
 
           <WebsitePrice />
-          <LogoPrice data-aos="fade-up" data-aos-duration="700" data-aos-delay="700" />
+          {/* <LogoPrice data-aos="fade-up" data-aos-duration="700" data-aos-delay="700" /> */}
         </div>
       </section>
 

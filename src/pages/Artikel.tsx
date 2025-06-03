@@ -19,7 +19,7 @@ const Artikel = () => {
             const data = await response.json();
 
             if (data.items) {
-                const formatArtikel = data.items.map((item: any) => {
+                const formatArtikel = data.items.slice(0, 3).map((item: any) => {
                     const imgMatch = item.content.match(/<img.*?src="(.*?)"/);
                     const thumbnail = imgMatch ? imgMatch[1] : "https://via.placeholder.com/150";
 
